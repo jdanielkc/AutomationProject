@@ -18,6 +18,10 @@ public class UtestStepDefinition {
     public void setStage(){
         OnStage.setTheStage(new OnlineCast());
     }
+    /*
+        Es lo que el actor debió de haber hecho o las precondiciones antes empezar a realizar la tarea de llenar el formulario
+        En este caso, sería el abrir la página y dar clic en el botón de "Join Today".
+    */
     @Given("^that a new user wants to register on the Utest page$")
     public void thatANewUserWantsToRegisterOnTheUtestPage() {
         OnStage.theActorCalled("User").wasAbleTo(OpenUtestPage.Page());
